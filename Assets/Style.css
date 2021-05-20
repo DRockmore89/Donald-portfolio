@@ -1,0 +1,52 @@
+body {
+    background-color: #ead3cb;
+    font-family: serif;
+    margin:0px;
+    padding:0px;
+}
+
+.navbar  {
+background-color: #845460;
+  display: flex; /* Flex container to display the child elements as flex with flex-end, wrap, and align the items in center */
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding-right: 0px;
+
+}
+.about-me-flex { /* Flex wrapper */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    margin-top: 50px;
+ }
+.about-me-grid-container {/* CSS Grid */
+    width: 80%; /* Contain the grid to a maximum of 80% of the flex wrapper */
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr);  /* Create a 4X4 grid with the first column smaller than the others 3 */
+    grid-template-rows: repeat(4, 1fr); /* 4 rows of equal size */
+    gap: 10px 10px; /* Gap on x and y grid */
+  }
+  
+  .about-me-title { /* Cell declarations for the title of the container */
+    padding-top: 0px;
+    font-size: 35px;
+    grid-row: 1 / span 4;
+    padding-right: 10px;
+    text-align: right;
+    border-right: 2px solid var(--about-me-work-border);
+  }
+  
+  .about-me-title-1 {
+    padding-left: 10px;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 2;
+  }
+  
+  .about-me-title-2 {
+    padding-left: 10px;
+    grid-column: 2 / span 3;
+    grid-row: 3 / span 2;
+  }
