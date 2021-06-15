@@ -5,38 +5,41 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Donald Rockmore Portfolio</title>
     <meta name="Donald Rockmore Portfolio" content="Donald Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="Assets/Style.css">
+    <title>Donald Rockmore Portfolio</title>
 </head>
 
 <body>
-  
-    <div class="navbar navbar-light bg-light">
-        <nav class="container-fluid">
-            <div class="navbar-header">
-                <b class="bg-info text-important navbar-brand">Donald Rockmore</b>
-            </div>
+    <header>
+        <!-- <div class="navbar navbar-dark bg-dark"> -->
+        <!-- <nav class="container-fluid"> -->
+        <span class="navbar-header">
+            <h1>Donald Rockmore</h1>
+        </span>
+        <nav>    
             <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">About Me</a>
+                <li>
+                    <a href="#about-me">About Me</a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#https://www.linkedin.com/in/donald-rockmore-a5118854/">Work</a>
+                <li>
+                    <a href="#Work">Work</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">contact</a>
+                <li>
+                    <a href="#contact-me">contact</a>
                 </li>
             </ul>
         </nav>
-    </div>
-  
-    <figure class="">
-        <img src="https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Donald portfolio picture" width="1600" height="236">
+        </div>
+    </header>
+
+    <figure class="hero">
+        
+        <!-- <img src="https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Donald portfolio picture" width="1600" height="236"> -->
     </figure>
 
     <section>
@@ -56,11 +59,69 @@
     </section>
     
     <section>
-        <div id="Work" class="work-flex">
-            <div class="Work-grid-container">
+        <div id="work" class="work-flex">
+            <div class="work-grid-container">
                 <div class="work-title">
                     <p>work</p>
                 </div>
+
+                <div onclick="projectClicked('digital-marketing-meeting')" alt="Image Displaying the Horiseon landing Page" title="Horiseon landing Page" target="_blank" style="cursor: pointer;" class="work-item-project digital-marketing-meeting">
+                    <span class="span-background"> <!-- Span added to contain h3, lower text and wrapped background -->
+                        <h3>Horiseon Services</h3>
+                        <span class="lower-text">HTML/CSS</span> <!-- A small class to apply for all grid lower text -->
+                    </span>
+                </div>
+                <!-- All grids below follow same patern as described above until this article container is finished -->
+                <div onclick="projectClicked('my_password_generator')" alt="Image Displaying the password generator landing Page" title="password generator landing page" style="cursor: pointer;" class="work-item-project my_password_generator">
+                    <span class="span-background">
+                        <h3>Password Generator</h3>
+                        <span class="lower-text">HTML/CSS</span>
+                    </span>
+                </div>
+                <div onclick="projectClicked('password-generator')" alt="Image Displaying the Password Generator landing Page" title="Password Generator landing page" style="cursor: pointer;" class="work-item-project password-generator">
+                    <span class="span-background">
+                        <h3>Password Generator</h3>
+                        <span class="lower-text">CSS/Javascript</span>
+                    </span>
+                </div>
+                <div onclick="projectClicked('web-api-code-quiz')" alt="Image Displaying the Web Api Code Quiz landing Page" title="Web Api Code Quiz landing page" style="cursor: pointer;" class="work-item-project web-api-code-quiz">
+                    <span class="span-background">
+                        <h3>Web API Code Quiz</h3>
+                        <span class="lower-text">Javascript/CSS/LocalStorage</span>
+                    </span>
+                </div>
+                <div onclick="projectClicked('work-day-scheduler')" alt="Image Displaying the Web Api Code Quiz landing Page" title="Web Api Code Quiz landing page" style="cursor: pointer;" class="work-item-project work-day-scheduler">
+                    <span class="span-background">
+                        <h3>Work Day Scheduler</h3>
+                        <span class="lower-text">Dynamic Javascript/Bootstrap</span>
+                    </span>
+                </div>
+                <div onclick="projectClicked('project01-group07')" alt="Image Displaying the Project01 Group07 landing Page" title="Project01 Group07 landing page" style="cursor: pointer;" class="work-item-project project01-group07">
+                    <span class="span-background">
+                        <h3>Project01 Group07</h3>
+                        <span class="lower-text">HTML/CSS/Javascript</span>
+                    </span>
+        </div>
+
+                <footer>
+                    <div id="contact-me" class="footer-flex"> <!-- Id's coming from the header nav and a flex wrapper -->
+                        <div class="footer-container"> <!-- footer container is a grid container -->
+                            <!-- Each grid item has its own grid location achieved by creating one object/instance per class -->
+                            <div class="footer-grid-item-contact-me"> <!-- Each item is a grid item --> 
+                                Contact Me
+                            </div>
+                            <div class="footer-grid-item-phone">
+                                <a href="tel:770-990-8406" class="nav-effects">770-990-8406</a>
+                            </div>
+                            <div class="footer-grid-item-email"> 
+                                <a href="donaldrockmore@yahoo.com">donaldrockmore@yahoo.com</a>
+                            </div>
+                            <div class="footer-grid-item-git-hub"> 
+                                <a href="https://github.com/DRockmore89/" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
                 
                 
             </div>
