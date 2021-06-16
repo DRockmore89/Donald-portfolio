@@ -139,7 +139,7 @@ header nav ul li {
 }
   
   .about-me-title { /* Cell declarations for the title of the container */
-    padding-top: 10px;
+    padding-top: 0px;
     font-size: 35px;
     grid-row: 1 / span 4;
     padding-right: 10px;
@@ -160,29 +160,22 @@ header nav ul li {
 
 }
 
-.work-flex { /* Flex wrapper */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: right;
-    margin-top: 50px;
-  
-}
+
 .work-grid-container {/* CSS Grid */
-    width: 80%;
+    width: 65%;
     display: grid;
     /* Create a 4X8 grid. */
-    grid-template-columns: 1fr repeat(3, 2fr); /* Create a 4X4 grid with the first column smaller than the others 3 */
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 3fr repeat(3, 2fr); /* Create a 4X4 grid with the first column smaller than the others 3 */
+    grid-template-rows: repeat(10, 1fr);
     gap: 10px 10px; /* Gap on x and y grid */
 }
   
 .work-title {
     padding-top: 10px;
     font-size: 35px;
-    grid-row: 1 / span 4;
+    grid-row: 2 / span 9;
+    text-align: right;
     padding-right: 10px;
-    text-align: center;
     border-right: 2px solid var(--about-me-work-border);
 }
   
@@ -199,10 +192,10 @@ header nav ul li {
     border: .25vw solid var(--rgba-border-color-opacity);
 }
   
-.work-item-project.run-buddy {
+.work-item-project.my_password_generator {
     grid-column: 3 /span 1;
     grid-row: 7 / span 3;
-    background-image: url("../Assets/img/javascript-homework-demo.png");
+    background-image: url("../Assets/img/03-javascript-homework-demo.png");
     background-size: cover;
     display: flex; /*Flex required to move the element as flex */
     align-items: flex-end; /*Allow text to be at center of grid*/
@@ -212,11 +205,11 @@ header nav ul li {
     border: .25vw solid var(--rgba-border-color-opacity);
 }
   
-.work-item-project.my_password_generator {
+.work-item-project.fiveday-forcast {
     grid-column: 2 / span 1;
     grid-row: 7 / span 3; 
     /* Royalty free image */
-    background-image: url("../Assets/img/03-javascript-homework-demo.png");
+    background-image: url("../Assets/img/06-server-side-apis-homework-demo.png");
     background-size: cover;
     /* Allow the background image to align */
     display: flex; /*Flex required to move the element as flex */
@@ -275,6 +268,33 @@ header nav ul li {
     
 }
 
+.span-background { /* Apply background to any span with this class name */
+  background-color: var(--lightskyblue);
+  position: relative;
+  line-height: 1.5;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 5%;
+  opacity: .8;
+}
+
+.span-background.title { /* Move away from the top/bottom container*/
+  /* Match the header Nav element on the flex container elements*/
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Hero section cool subtitle with opacity of .95 */
+/* It needs to be adjusted to blend slighty with image selected with image selected */
+.span-background.opacity{
+  opacity: .95; /* Note: 1 is 0 opacity and 0 is fully transparent */
+  font-size: 30px;
+}
+
+.span-background.lower-text {
+  font-size: x-small;
+}
+
 .footer-flex { /* Flex container */
   display: flex;
   flex-wrap: wrap;
@@ -306,7 +326,7 @@ header nav ul li {
 
 .footer-grid-item-phone{
   /* Notice how all below are grid-row 2? CSS grid uses avaialble cells to allocate the element*/
-  grid-row: 2;
+  grid-row: 1;
 }
 
 .footer-grid-item-email{
@@ -314,7 +334,7 @@ header nav ul li {
 }
 
 .footer-grid-item-git-hub{
-  grid-row: 2;
+  grid-row: 3;
 }
 
   
