@@ -3,8 +3,7 @@
   padding: 0;
   box-sizing: border-box
   
- }
- 
+}
  
 :root {
     --header-footer-background-color: #404040;
@@ -12,19 +11,16 @@
     --lightgray: lightgray;
     --about-me-work-border: #131318;
     --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
-  }
+}
 
   
-
-  header h1 {
+header h1 {
     /* At bigger screens create space at left of h1 on header */
     /* text-align: left; */
     margin: 25px;
     padding-left: 50px;
     color: rgba(135, 206, 250, 0.8);
-
-    
-   
+  
 }
   
   header {
@@ -74,13 +70,6 @@ footer a {
 }
 
 
-
- 
-  
-
-
-
-
 header nav ul {
   display: flex; /* Flex container to display the child elements as flex with flex-end, wrap, and align the items in center */
   flex-wrap: wrap;
@@ -99,13 +88,6 @@ header nav ul li {
     margin-bottom: 10px;
     
 }
-
-
- 
-
- 
-
-  
 
 .hero { 
     height: 300px;
@@ -181,33 +163,33 @@ header nav ul li {
   
 .work-item-project.digital-marketing-meeting { /* Grid cells with embedded images */
     grid-column: 2 / span 2;
-    grid-row: 1 / span 6;
+    grid-row: 2 / span 6;
     background-image: url("../Assets/img/digital-marketing-meeting.jpg");
     background-size: cover; /* Allows the image to autosie to cover the container */
     display: flex; /*Flex required to move the element as flex */
     align-items: flex-end; /*Allow text to be at center of grid*/
     padding-left: 0px;
     padding-bottom: 15px;
-    text-align: left;
+    text-align: center;
     border: .25vw solid var(--rgba-border-color-opacity);
 }
   
 .work-item-project.my_password_generator {
     grid-column: 3 /span 1;
-    grid-row: 7 / span 3;
+    grid-row: 8 / span 3;
     background-image: url("../Assets/img/03-javascript-homework-demo.png");
     background-size: cover;
     display: flex; /*Flex required to move the element as flex */
     align-items: flex-end; /*Allow text to be at center of grid*/
     padding-left: 0px;
     padding-bottom: 15px;
-    text-align: left;
+    text-align: center;
     border: .25vw solid var(--rgba-border-color-opacity);
 }
   
 .work-item-project.fiveday-forcast {
     grid-column: 2 / span 1;
-    grid-row: 7 / span 3; 
+    grid-row: 8 / span 3; 
     /* Royalty free image */
     background-image: url("../Assets/img/06-server-side-apis-homework-demo.png");
     background-size: cover;
@@ -222,35 +204,35 @@ header nav ul li {
   
 .work-item-project.web-api-code-quiz {
     grid-column: 4 / span 1;
-    grid-row: 1 / span 3;
+    grid-row: 2 / span 3;
     /* Royalty free image */
     background-image: url("../Assets/img/04-web-apis-homework-demo.gif");
     background-size: 300px 200px, cover;
     display: flex; /*Flex required to move the element as flex */
     align-items: flex-end; /*Allow text to be at center of grid*/
     padding-left: 0px;
-    padding-bottom: 15px;
-    text-align: left;
+    padding-bottom: 100px;
+    text-align: center;
     border: .25vw solid var(--rgba-border-color-opacity);
 }
   
 .work-item-project.work-day-scheduler {
     grid-column: 4 / span 1;
-    grid-row: 4 / span 3;
+    grid-row: 5 / span 3;
     /* Royalty free image */
     background-image: url("../Assets/img/05-third-party-apis-homework-demo.gif");
     background-size: cover;
     display: flex; /*Flex required to move the element as flex */
     align-items: flex-end; /*Allow text to be at center of grid*/
     padding-left: 0px;
-    padding-bottom: 15px;
+    padding-bottom: 100px;
     text-align: left;
     border: .25vw solid var(--rgba-border-color-opacity);
 }
   
 .work-item-project.project01-group07 {
     grid-column: 4 /span 1;
-    grid-row: 7 / span 3;
+    grid-row: 8 / span 3;
     background-image: url("../Assets/img/My_Mental.png");
     background-size: cover;
     display: flex; /*Flex required to move the element as flex */
