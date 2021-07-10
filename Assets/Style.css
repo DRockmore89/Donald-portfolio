@@ -181,7 +181,7 @@ header nav ul li {
 .work-item-project.my_password_generator {
   grid-column: 3 /span 1;
   grid-row: 8 / span 3;
-  background-image: url("../Assets/img/03-javascript-homework-demo.png");
+  background-image: url("/Assets/img/03-javascript-homework-demo.png");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -195,7 +195,7 @@ header nav ul li {
   grid-column: 2 / span 1;
   grid-row: 8 / span 3; 
   /* Royalty free image */
-  background-image: url("../Assets/img/06-server-side-apis-homework-demo.png");
+  background-image: url("/Assets/img/06-server-side-apis-homework-demo.png");
   background-size: cover;
   /* Allow the background image to align */
   display: flex; /*Flex required to move the element as flex */
@@ -210,7 +210,7 @@ header nav ul li {
  grid-column: 4 / span 1;
  grid-row: 2 / span 3;
   /* Royalty free image */
-  background-image: url("../Assets/img/04-web-apis-homework-demo.gif");
+  background-image: url("/Assets/img/04-web-apis-homework-demo.gif");
   background-size: 300px 200px, cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -224,7 +224,7 @@ header nav ul li {
   grid-column: 4 / span 1;
   grid-row: 5 / span 3;
   /* Royalty free image */
-  background-image: url("../Assets/img/05-third-party-apis-homework-demo.gif");
+  background-image: url("/Assets/img/05-third-party-apis-homework-demo.gif");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -237,7 +237,7 @@ header nav ul li {
 .work-item-project.project01-group07 {
   grid-column: 4 /span 1;
   grid-row: 8 / span 3;
-  background-image: url("../Assets/img/My_Mental.png");
+  background-image: url("/Assets/img/My_Mental.png");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
