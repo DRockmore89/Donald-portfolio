@@ -24,7 +24,7 @@
   header {
     /* makes header's bg image kind of faded */
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(./img/frontal.jpeg);
+      url(./img/buildings-1804479__340.jpeg);
     /* background-size: cover; */
     background-position: center;
     /* height: ; */
@@ -124,7 +124,7 @@
   
   #header-about {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(./img/pizza.jpg) 20% 30% / cover;
+      url(./img/chicago-us-banner-dp-min.png) 20% 30% / cover;
     height: 10rem;
     border-bottom: 3px solid MediumSeaGreen;
   }
@@ -258,7 +258,7 @@
   
   #header-work {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(./img/frontal.jpeg) 20% 30% / cover;
+      url(./img/chicago-us-banner-dp-min.png) 20% 30% / cover;
     height: 10rem;
     border-bottom: 3px solid mediumseagreen;
   }
